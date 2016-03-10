@@ -22,5 +22,10 @@
         "illuminate/events": "^5.2",
         "php-di/php-di": "^5.2",
         "hassankhan/config": "^0.10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rush\\": "app/"
+        }
     }
 }
