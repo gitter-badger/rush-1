@@ -26,6 +26,9 @@
     "autoload": {
         "psr-4": {
             "Rush\\": "app/"
-        }
+        },
+        "files": [
+            "app/Http/functions.php"
+        ]
     }
 }
