@@ -19,6 +19,8 @@
         "zendframework/zend-diactoros": "^1.3",
         "relay/relay": "^1.1",
         "illuminate/database": "^5.2",
-        "illuminate/events": "^5.2"
+        "illuminate/events": "^5.2",
+        "php-di/php-di": "^5.2",
+        "hassankhan/config": "^0.10.0"
     }
 }
