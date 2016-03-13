@@ -72,6 +72,20 @@ See `config/view.php` and [rush/view-strategies](https://github.com/Leko/php-vie
 
 Available engines are [Jade](https://github.com/everzet/jade.php), [Fenom](https://github.com/fenom-template/fenom), [Dwoo](https://github.com/dwoo-project/dwoo), [FOIL](https://github.com/FoilPHP/Foil), [Plate](http://platesphp.com/engine/folders/), [Twig](https://github.com/twigphp/Twig) and [Latte](https://github.com/nette/latte)
 
+```php
+<?php
+
+return [
+    'base_path' => __DIR__.'/../resouces/views',
+
+    'default_extension' => 'twig',
+
+    'strategies' => [
+        'twig' => '\\Rush\\Strategy\\Twig',
+    ],
+];
+```
+
 > See the following articles for more detail.  
 > [昨今のPHPのテンプレートエンジンについて調べて共通インタフェースを作った](http://leko.jp/archives/840)
 
