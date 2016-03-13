@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "46383bf34d2d45c833e82f7220949e2b",
-    "content-hash": "34866d0cdf0bb0b55a8ede64321a4678",
+    "hash": "ccfdaa2bcd8bbd8ceeb325e37c08ed92",
+    "content-hash": "a38debacc26ba48e91682bea45078bea",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -103,16 +103,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "a327942c50cbd62b25c6fbe08f173031ce25fbff"
+                "reference": "8da9523f07c62d56fe1cf36f8ae29b333afc181f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a327942c50cbd62b25c6fbe08f173031ce25fbff",
-                "reference": "a327942c50cbd62b25c6fbe08f173031ce25fbff",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/8da9523f07c62d56fe1cf36f8ae29b333afc181f",
+                "reference": "8da9523f07c62d56fe1cf36f8ae29b333afc181f",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +120,8 @@
             },
             "require-dev": {
                 "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "^4.8 || ^5.0"
+                "phpunit/phpunit": "^4.8 || ^5.0",
+                "symfony/var-dumper": "~3.0"
             },
             "suggest": {
                 "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
@@ -158,7 +159,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2016-01-06 17:51:21"
+            "time": "2016-03-13 10:22:39"
         },
         {
             "name": "hassankhan/config",
@@ -609,16 +610,16 @@
         },
         {
             "name": "oscarotero/psr7-middlewares",
-            "version": "v3.14.1",
+            "version": "v3.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/psr7-middlewares.git",
-                "reference": "858eabf6917c81a22eb0dada3b9e9702c7cdec4c"
+                "reference": "fb6627b2ba15f9f30a1bcd588bd503e2a3f97ad2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/psr7-middlewares/zipball/858eabf6917c81a22eb0dada3b9e9702c7cdec4c",
-                "reference": "858eabf6917c81a22eb0dada3b9e9702c7cdec4c",
+                "url": "https://api.github.com/repos/oscarotero/psr7-middlewares/zipball/fb6627b2ba15f9f30a1bcd588bd503e2a3f97ad2",
+                "reference": "fb6627b2ba15f9f30a1bcd588bd503e2a3f97ad2",
                 "shasum": ""
             },
             "require": {
@@ -697,7 +698,7 @@
                 "psr-7",
                 "psr-messages"
             ],
-            "time": "2016-03-01 11:11:08"
+            "time": "2016-03-11 09:06:48"
         },
         {
             "name": "php-di/invoker",
@@ -931,6 +932,75 @@
             "time": "2015-12-17 18:18:30"
         },
         {
+            "name": "rush/view-strategies",
+            "version": "0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Leko/php-view-strategies.git",
+                "reference": "90fd320ea57e9ecb0a86d107bfa0f437013857ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Leko/php-view-strategies/zipball/90fd320ea57e9ecb0a86d107bfa0f437013857ed",
+                "reference": "90fd320ea57e9ecb0a86d107bfa0f437013857ed",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4"
+            },
+            "require-dev": {
+                "dwoo/dwoo": "2.0b1",
+                "fenom/fenom": "^2.8",
+                "foil/foil": "^0.6.4",
+                "kylekatarnls/jade-php": "^1.6",
+                "latte/latte": "^2.3",
+                "league/plates": "^3.1",
+                "phpmd/phpmd": "2.2.2",
+                "phpunit/phpunit": "4.8.*",
+                "smarty/smarty": "^3.1",
+                "squizlabs/php_codesniffer": "2.*",
+                "twig/twig": "^1.24"
+            },
+            "suggest": {
+                "dwoo/dwoo": "see https://github.com/dwoo-project/dwoo",
+                "fenom/fenom": "see https://github.com/fenom-template/fenom",
+                "foil/foil": "see https://github.com/FoilPHP/Foil",
+                "kylekatarnls/jade-php": "see https://github.com/kylekatarnls/jade-php",
+                "latte/latte": "see https://github.com/nette/latte",
+                "league/plates": "see https://github.com/thephpleague/plates",
+                "smarty/smarty": "see https://github.com/smarty-php/smarty",
+                "twig/twig": "see https://github.com/twigphp/Twig"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rush\\": "src/",
+                    "Rush\\Test\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leko",
+                    "email": "leko.noor@gmail.com"
+                }
+            ],
+            "description": "Multi template engine driver for PHP",
+            "keywords": [
+                "driver",
+                "multiple",
+                "rush",
+                "template engine",
+                "templates",
+                "templating",
+                "views"
+            ],
+            "time": "2016-03-13 10:56:23"
+        },
+        {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.1.1",
             "source": {
@@ -1052,6 +1122,162 @@
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
             "time": "2016-02-02 13:44:19"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.24.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
+                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.7"
+            },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.24-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2016-01-25 21:22:18"
+        },
+        {
+            "name": "webmozart/assert",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozart/assert.git",
+                "reference": "30eed06dd6bc88410a4ff7f77b6d22f3ce13dbde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/30eed06dd6bc88410a4ff7f77b6d22f3ce13dbde",
+                "reference": "30eed06dd6bc88410a4ff7f77b6d22f3ce13dbde",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Assert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "Assertions to validate method input/output with nice error messages.",
+            "keywords": [
+                "assert",
+                "check",
+                "validate"
+            ],
+            "time": "2015-08-24 13:29:44"
+        },
+        {
+            "name": "webmozart/path-util",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozart/path-util.git",
+                "reference": "d939f7edc24c9a1bb9c0dee5cb05d8e859490725"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozart/path-util/zipball/d939f7edc24c9a1bb9c0dee5cb05d8e859490725",
+                "reference": "d939f7edc24c9a1bb9c0dee5cb05d8e859490725",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "webmozart/assert": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.6",
+                "sebastian/version": "^1.0.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\PathUtil\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                }
+            ],
+            "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
+            "time": "2015-12-17 08:42:14"
         },
         {
             "name": "willdurand/negotiation",
