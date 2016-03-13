@@ -1,5 +1,7 @@
 # rush
 
+[![Join the chat at https://gitter.im/Leko/rush](https://badges.gitter.im/Leko/rush.svg)](https://gitter.im/Leko/rush?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Rush is [PSR-7](http://www.php-fig.org/psr/psr-7/) based framework.
 
 ## Getting started
