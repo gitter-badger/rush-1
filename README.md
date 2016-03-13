@@ -36,6 +36,19 @@ return [
 ### Routing
 See `config/routes.php` and `app/Route.php` and [nikic/fast-route](https://github.com/nikic/FastRoute)
 
+```php
+<?php
+
+use Rush\Route;
+use Zend\Diactoros\Response\RedirectResponse;
+
+Route::get('/', function ($request, $response) {
+    // https://github.com/zendframework/zend-diactoros/blob/master/doc/book/custom-responses.md
+    return new RedirectResponse('/welcome/rush', 301);
+});
+Route::get('/welcome/{name}', '\\Rush\\Http\\Controller\\Home#index');
+```
+
 ### Database
 See `config/database.php` and [illuminate/database](https://github.com/illuminate/database).
 
