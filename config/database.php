@@ -14,7 +14,7 @@ return [
          *
          * @see https://mattstauffer.co/blog/laravel-on-heroku-using-a-mysql-database
          */
-        'uri' => Rush\env('RUSH_DB_URI',
+        'uri' => Rush\env('CLEARDB_DATABASE_URL',
             'file://'.__DIR__.'/../resouces/storage/development.sqlite'),
     ],
 ];
