@@ -54,6 +54,19 @@ See `config/database.php` and [illuminate/database](https://github.com/illuminat
 
 Available engines are `mysql`, `pgsql`, `sqlite` and `sqlsrv`.
 
+```php
+<?php
+
+return [
+    'default' => [
+        'driver' => Rush\env('RUSH_DB_DRIVER', 'sqlite'),
+
+        'uri' => Rush\env('RUSH_DB_URI',
+            'file://'.__DIR__.'/../resouces/storage/development.sqlite'),
+    ],
+];
+```
+
 ### Template engine
 See `config/view.php` and [rush/view-strategies](https://github.com/Leko/php-view-strategies).
 
