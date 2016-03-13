@@ -3,7 +3,7 @@
 return [
     'default' => [
         /**
-         * Available values are `mysql`, `?pg?`, `sqlite`, `sqlsvr`
+         * Available values are `mysql`, `pgsql`, `sqlite`, `sqlsvr`
          */
         'driver' => 'sqlite',
 
