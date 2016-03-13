@@ -10,6 +10,11 @@ use Illuminate\Container\Container;
 
 $eloquent = new Manager;
 foreach (Config::load('database.php')->all() as $name => $connection) {
+    if (isset($connection['uri'])) {
+        $connection = array_merge($connection, Rush\parseDatabaseUri($connection['uri']));
+        unset($connection['uri']);
+    }
+
     $eloquent->addConnection($connection, $name);
 }
 $eloquent->setEventDispatcher(new Dispatcher(new Container));

@@ -3,15 +3,18 @@
 return [
     'default' => [
         /**
+         * Set database driver name
+         *
          * Available values are `mysql`, `pgsql`, `sqlite`, `sqlsrv`
          */
-        'driver' => 'sqlite',
+        'driver' => Rush\env('RUSH_DB_DRIVER', 'sqlite'),
 
         /**
-         * @see Laravel document
+         * Set database uri
+         *
+         * @see https://mattstauffer.co/blog/laravel-on-heroku-using-a-mysql-database
          */
-        'database' => __DIR__.'/../resouces/storage/development.sqlite',
-
-        'prefix' => '',
+        'uri' => Rush\env('RUSH_DB_URI',
+            'file://'.__DIR__.'/../resouces/storage/development.sqlite'),
     ],
 ];
