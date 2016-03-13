@@ -13,6 +13,26 @@ composer create-project rush/rush MyRushProject
 ### HTTP middleware
 See `config/middlewares.php` and [oscarotero/psr7-middlewares](https://github.com/oscarotero/psr7-middlewares).
 
+```php
+<?php
+
+use Psr7Middlewares\Middleware;
+
+return [
+    //(optional) this allows whoops to choose the best handler according with the expected format
+    Middleware::formatNegotiator(),
+    Middleware::Whoops(), //(optional) provide a custom whoops instance
+
+    //Handle errors
+    // Middleware::errorHandler('error_handler_function')->catchExceptions(true),
+
+    //Parse the request payload
+    Middleware::payload(),
+    
+    // ...
+];
+```
+
 ### Routing
 See `config/routes.php` and `app/Route.php` and [nikic/fast-route](https://github.com/nikic/FastRoute)
 
