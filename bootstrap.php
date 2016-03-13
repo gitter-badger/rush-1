@@ -8,10 +8,6 @@ use Illuminate\Database\Capsule\Manager;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Container\Container;
 
-foreach (Config::load('providers.php')->all() as $name => $provider) {
-    Container::set($name, new $provider, true);
-}
-
 $eloquent = new Manager;
 foreach (Config::load('database.php')->all() as $name => $connection) {
     $eloquent->addConnection($connection, $name);

@@ -2,7 +2,8 @@
 
 namespace Rush;
 
-use \DI\ContainerBuilder;
+use DI\ContainerBuilder;
+use Webmozart\PathUtil\Path;
 
 class Container
 {
@@ -11,7 +12,9 @@ class Container
     public static function __callStatic($method, array $args = [])
     {
         if (is_null(self::$container)) {
+            $definitions = Path::join(__DIR__, '../config/providers.php');
             $builder = new ContainerBuilder();
+            $builder->addDefinitions($definitions);
             self::$container = $builder->build();
         }
 
